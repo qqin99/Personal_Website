@@ -111,6 +111,12 @@ html {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
 }
+
+.active {
+  border-bottom: 2px solid #C74350;
+  background-color:$bright-pink;
+}
+
 /****************body*****************/
 /*Fixed background picture*/
 body {
@@ -215,10 +221,10 @@ p {
   padding: auto;
 }
 
-.contact-message {
-  width: 40%;
-  margin: 40px auto 60px;
-}
+// .contact-message {
+//   width: 40%;
+//   margin: 40px auto 60px;
+// }
 /* Style the video: 100% width and height to cover the entire window */
 #cloudsVideo {
   position: absolute;
