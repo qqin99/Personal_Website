@@ -1,13 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP1</title>
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@500&family=Oswald:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="css/main.scss">
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <!--font awesome icon website-->
+  <script src="https://kit.fontawesome.com/fcf7f97ecc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- The video -->
+<video autoplay muted loop id="cloudsVideo">
+  <source src="assets/clouds.mp4" type="video/mp4">
+</video>
+
+  <!-- /#banner -->
+  <header id="banner" class="body">
+    <h1><a href="#">Hello, World! </a></h1>
+    <!-- navbar -->
+    <nav id ="main-nav">
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="top-container">
+    <div id ="profile-picture">
+        <img src="assets/QQ photo.png" alt="Profile-pic">
+    </div>
+    <div id = "greeting">
+    <h1>I'm Qin Qin</h1>
+    <h2>A Software Engineer</h2>
+  </div>
+    <div id="profile" class="intro-body">
+      <p class="intro">A 👩‍💻 <span class="data">computer science graduate</span> student of UIUC </p>
+      <p class="intro">A SDE Intern <span class="data">@ Amazon</span></a>
+      <p class="intro">A <span class="data">data scientist</span> with 5 years of programming experience.</p>
+      <p class="intro">A goal achiever with high <span class="data">work ethics</span> and <span class="data">professional behaviors</span>.</p>
+      <p class="intro">A quick learner and 🥰 passionate about transitioning to a software engineering career path.</p>
+      <p class="intro">I love movies 🎥 and reading 📖.</p>
+    </div>
+    </div>
+
+
+  <div class="middle-container">
+    <hr>
+    <div class="skill section" id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skill-row">
+        <img class="skill-pic" src="assets/skill.png" alt="skill-pic">
+        <h3>Languages</h3>
+        <p>Python, Java, JavaScript, C++, HTML/CSS, Haskell, SQL, R </p>
+        <h3>Frameworks</h3>
+        <p>Flask, Django, Node.js, React.js, Angular.js, jQuery, Spring, Express, Bootstrap</p>
+      </div>
+      <div class="skill-row">
+        <img class="skill-pic2" src="assets/giphy.gif" alt="icon-pic">
+        <h3>Databases</h3>
+        <p>MongoDB, PostgreSQL, DynamoDB, MySQL, SQLite, SQLServer, SAS</p>
+        <h3>Tools</h3>
+        <p>AWS, Git, Heroku, Docker, Postman, Selenium, Agile Methodology</p>
+        <h3>Libraries</h3>
+        <p>Pytest, Unittest, Numpy, Scipy, Pandas, Matplotlib, Scikit-learn, Tensorflow, Seaborn, Boto3, PySpark</p>
+      </div>
+    </div>
+    <hr>
+    <div class="projects section" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-row">
+        <img class="project-pic" src="assets/project.png" alt="quotes">
+        <h3>Web Application – Quotes & Efficiency</h3>
+        <p>Developed a scalable network application using HTML/CSS, JavaScript, jQuery, Node.js, Experss.js,
+          and Embedded JavaScript templating (EJS) to create dynamic To-Do-List web pages. </p>
+      </div>
+      <div class="projects-row">
+        <img class="project-pic2" src="assets/chatbot.jpeg" alt="chatbot">
+        <h3>ChatBot for Airline Ticket Prices Query</h3>
+        <p>Using AWS Lambda, DynamoDB, and Lex to create a chatbot which can query the air ticket prices.
+          Deploy the Lexbot using AWS Cognito Identity Pool. </p>
+      </div>
+      <div class="projects-row">
+        <img class="project-pic3" src="assets/spark_and_hadoop.jpeg" alt="hadoop">
+        <h3>Wikipedia popular links using Hadoop MapReduce and Spark MapReduce</h3>
+        <p> Develop an application to find the most popular pages/most used words in titles/orphan pages on Wikipedia
+          using Hadoop MapReduce and Spark MapReduce. </p>
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me section" id="contact_me">
+      <h2>Get In Touch</h2>
+      <h3>If you need a software engineer like me.</h3>
+      <p>quick learner, pasionate, professional, fun to work with.</p>
+      <button class="btn" onclick="window.location.href='mailto:qinq2@illinois.edu';">   <i class="social-icon fas fa-envelope"></i>CONTACT ME</button>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer id="bottom-container" class="body">
+
+    <a class="footer-link" href="https://www.linkedin.com/in/qin2sde/"><i class="social-icon fa-brands fa-linkedin fa-xl"></i>LinkedIn</a>
+    <a class="footer-link" href="https://github.com/qqin99"><i class="social-icon fa-brands fa-github fa-xl"></i>Github</a>
+    <a class="footer-link" href="https://www.instagram.com/im7n7n/">  <i class="social-icon fa-brands fa-square-instagram fa-xl"></i>Instagram</a>
+    <p class="copyright">© 2022 QIN QIN @ NYC.</p>
+  </footer>
+
+</body>
+
 </html>
