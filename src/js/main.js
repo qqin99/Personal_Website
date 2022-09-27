@@ -136,13 +136,13 @@ item3.onclick = function(){
     modal3.style.display = "block";
 }
 item4.onclick = function(){
-    modal1.style.display = "block";
+    modal4.style.display = "block";
 }
 item5.onclick = function(){
-    modal2.style.display = "block";
+    modal5.style.display = "block";
 }
 item6.onclick = function(){
-    modal3.style.display = "block";
+    modal6.style.display = "block";
 }
 // When the user clicks on botton (x), close the modal
 close1.onclick = function() {
